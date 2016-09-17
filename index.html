@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div id="login" data-role="page" class="ui-page-active">
+        <div class="topLogo"></div>
+        <form id="form">
+            <input type="text" name="name" placeholder="username"/>
+            <input type="password" name="pass" placeholder="password"/>
+            <input type="submit" value="Log in"/>
+        </form>
+    </div>
+    <div id="homePage" data-role="page">
+        <div class="topLogo"></div>
+        <h2>Your lECOvel</h2>
+        <div class="lECOvel">
+            <div class="col">
+                <div class="holder" style="height: 50%"></div>
+                <div class="level leveln leveln3"></div>
+            </div>
+            <div class="col">
+                <div class="holder" style="height: 50%"></div>
+                <div class="level leveln leveln2"></div>
+            </div>
+            <div class="col">
+                <div class="holder" style="height: 50%"></div>
+                <div class="level leveln leveln1"></div>
+            </div>
+            <div class="col">
+                <div class="holder" style="height: 35%"></div>
+                <div class="level level1"></div>
+            </div>
+            <div class="col">
+                <div class="holder" style="height: 25%"></div>
+                <div class="level level2"></div>
+            </div>
+            <div class="col">
+                <div class="level level3"></div>
+            </div>
+        </div>
+        <div class="statusText">
+            <p>Multiplier is <b><span class="multiplier"></span>x</b>.</p>
+            <p>You have <b><span class="pointsTotal"></span></b> points total which makes you no. <b><span class="place"></span></b> driver.<br/></p>
+            <p>Make additional <b><span class="nextLevel">46785</span></b> points to get higher place.</p>
+        </div>
+        <a href="#map" class="ui-btn">See your current trip</a>
+    </div>
+    <div data-role='page' id='map'>
+        <div class="status">
+            <a href="#" class="center">O</a>
+            <div class="time">
+                
+            </div>
+        </div>
+        <div style="width:100%;height:85%" id="map_canvas"></div>
+        <a href="#homePage" class="ui-btn">Back</a>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAr8hy6e6O4-NeM7NiZH0JEVWAPra6f-mo",
+        authDomain: "ecodrivingchallange.firebaseapp.com",
+        databaseURL: "https://ecodrivingchallange.firebaseio.com",
+        storageBucket: "ecodrivingchallange.appspot.com",
+        messagingSenderId: "1028003527495"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDStWDrszyqvbcw-rPApNSAB0WEtZubUlo"></script>
+    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

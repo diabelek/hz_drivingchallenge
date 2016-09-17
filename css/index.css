@@ -1,0 +1,136 @@
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head+body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head+body .ui-btn.ui-btn-a:visited {
+    background-color: #15A606;
+    border-color: #158c08;
+    color: white;
+    text-shadow: 0 1px 0 #158c08;
+}
+
+.ui-btn {
+    height: 10%;
+}
+
+body, htrml {
+    width: 100%;
+    height: 100%;
+}
+
+.topLogo {
+    width: 100%;
+    background-image: url("../img/logo.png");
+    height: 15%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#homePage {
+    -webkit-transition: background 0.2s ease-in-out;
+    -ms-transition:     background 0.2s ease-in-out;
+    transition:         background 0.2s ease-in-out;
+}
+
+#homePage.redBackground {
+    background-color: #ff0000;
+}
+
+#homePage.greenBackground {
+    background-color: #15A606;
+}
+
+#map, #homePage, #login {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#homePage h2 {
+    height: 4%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+#homePage .lECOvel {
+    height: 47%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+#homePage .lECOvel .col {
+    margin: 0 2%;
+    width: 12%;
+}
+
+#homePage .lECOvel .level {
+    border: 1px solid #15A606;
+    background: white;
+    box-sizing: border-box;
+}
+
+#homePage .lECOvel .level.leveln {
+    border-color: #ff0000;
+}
+
+#homePage .lECOvel .level.leveln3,
+#homePage .lECOvel .level.level3{
+    height: 50%;
+}
+#homePage .lECOvel .level.leveln2,
+#homePage .lECOvel .level.level2{
+    height: 25%;
+}
+#homePage .lECOvel .level.leveln1,
+#homePage .lECOvel .level.level1{
+    height: 15%;
+}
+
+#homePage .lECOvel .level.active {
+    background-color: #15A606;
+}
+
+#homePage .lECOvel .leveln.active {
+    background-color: #ff0000;
+}
+
+.statusText {
+    margin: 5%;
+    height: 20%;
+}
+
+.statusText p {
+    margin: 3% 0;
+    padding: 0;
+}
+
+.status {
+    width: 100%;
+    height: 5%;
+    background-color: #15A606;
+}
+
+.status a, .status a:visited, .status a:hover {
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    width: 10%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2%;
+    float: left;
+}
+
+.status .time {
+    float: right;
+    color: white;
+    display: block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 1% 5%;
+    font-size: 115%;
+}
+
+#login #form {
+    margin: 10%;
+}
