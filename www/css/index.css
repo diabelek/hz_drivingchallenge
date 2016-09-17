@@ -1,5 +1,46 @@
-body {
+body, html {
     color: orange;
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lECOvel {
+    margin: 10% auto;
+}
+
+.lECOvel .level {
+    width: 70%;
+    margin: 5px auto;
+    border: 1px solid #15A606;
+    background: white;
+    padding: 5%;
+}
+
+.lECOvel .level.active {
+    background-color: #15A606;
+}
+
+.welcomeScrren {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.welcomeScrren a {
+    width: 100%;
+    padding: 5% 0;
+    display: block;
+    color: white;
+    background-color: #15A606;
+    text-decoration: none;
+}
+
+.back {
+    display: block;
+    height: 10%;
+    width: 100%;
+    background-color: #15A606;
 }
