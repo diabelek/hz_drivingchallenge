@@ -211,7 +211,7 @@ function placeOnMap(data, map) {
         }
     }
     
-    var icon = '/img/pin';
+    var icon = 'img/pin';
     if (data.points < 0) { 
         content += '<br/>You <span class="violations">loose ' + (-1 * data.points) + ' points!</span>';
         icon = icon + '_not_ok.png';
